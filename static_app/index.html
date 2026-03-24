@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS | Swiss Legal Intelligence</title>
+    <meta name="description" content="AI-powered Swiss legal research assistant. Retrieve relevant case law and legislation instantly.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Particle background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header -->
+    <header>
+        <div class="jarvis-orb"></div>
+        <div class="header-text">
+            <h1>JARVIS</h1>
+            <p>Swiss Legal Intelligence System</p>
+        </div>
+        <div class="header-status">
+            <div class="status-dot"></div>
+            <span>ONLINE</span>
+        </div>
+    </header>
+
+    <!-- Chat area -->
+    <main id="chat-container">
+        <!-- Welcome hero -->
+        <div class="welcome-hero" id="welcome-hero">
+            <div class="hero-orb"></div>
+            <h2 class="hero-title">JARVIS</h2>
+            <p class="hero-subtitle">
+                Your ambitious legal associate, backed by the full Swiss Federal corpus.
+                Ask me anything about Swiss law — I'll find the precedents and build the argument.
+            </p>
+            <div class="hero-chips">
+                <div class="hero-chip" onclick="askSuggestion(this)">Pre-trial detention limits</div>
+                <div class="hero-chip" onclick="askSuggestion(this)">Inheritance disputes under ZGB</div>
+                <div class="hero-chip" onclick="askSuggestion(this)">Employment contract termination</div>
+                <div class="hero-chip" onclick="askSuggestion(this)">Custody after divorce</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Input bar -->
+    <div class="input-area">
+        <div class="input-wrapper">
+            <input type="text" id="query-input" placeholder="Ask a legal question..." autocomplete="off">
+            <button class="send-btn" id="send-btn" aria-label="Send query">
+                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

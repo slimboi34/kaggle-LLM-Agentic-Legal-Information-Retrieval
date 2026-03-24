@@ -1,0 +1,16 @@
+# Data files
+data/
+models/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# System
+.DS_Store
+*.swp
+
+# Generated
+submission.csv
